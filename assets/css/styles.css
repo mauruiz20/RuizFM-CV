@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -20,7 +20,7 @@ a:visited {
 }
 
 .content-curriculum {
-  width: 80%;
+  max-width: 80%;
 
   margin: 50px auto;
   -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 1);
@@ -60,7 +60,7 @@ a:visited {
   margin-bottom: 10px;
 }
 .perfil__container {
-  margin: 2rem auto;
+  margin: auto;
   width: 50%;
 }
 .perfil-photo {
@@ -71,7 +71,7 @@ a:visited {
 .title > h1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: 38px;
+  font-size: 33px;
   margin-bottom: 2rem;
 }
 .title > h2 {
@@ -171,10 +171,6 @@ a:visited {
   margin: 1.2rem;
 }
 
-.idioms__item {
-  margin: 0 6rem 0 0;
-}
-
 .skills__data {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -182,6 +178,92 @@ a:visited {
   gap: 1rem;
 }
 
-.skills__item {
-  margin: 0 6rem 0 0;
+@media (max-width: 1300px) {
+  .content-curriculum {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .content-curriculum {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .education__line {
+    height: 103%;
+  }
+
+  .idioms__data,
+  .skills__data {
+    grid-template-columns: 1fr 1fr;
+    margin: 1.2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .content-curriculum {
+    display: block;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  .sidebar-curriculum {
+    width: 100%;
+    background: #ffffff;
+  }
+
+  .main-curriculum {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .main-curriculum hr,
+  .sidebar-curriculum hr {
+    height: 4px;
+    width: 10rem;
+    background-color: rgb(80, 89, 128);
+    border: 0px;
+    margin-bottom: 10px;
+  }
+
+  .education__line {
+    height: 103%;
+  }
+
+  .skills__data,
+  .idioms__data {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+
+  .skills__item,
+  .idioms__item {
+    width: 5rem;
+  }
+
+  .contact-link:hover {
+    color: blue;
+    background-color: rgb(231, 231, 231);
+  }
+}
+
+@media (max-width: 500px) {
+  .education__line {
+    height: 110%;
+  }
+
+  .skills__data,
+  .idioms__data {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 1rem;
+  }
+
+  .skills__item,
+  .idioms__item {
+    width: 1.8rem;
+  }
 }
