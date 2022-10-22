@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  color: #5e5e5e;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.content-curriculum {
+  width: 80%;
+
+  margin: 50px auto;
+  -webkit-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 1);
+  border-radius: 1rem;
+
+  display: flex;
+}
+
+.main-curriculum {
+  background: #ffffff;
+  width: 70%;
+  height: 100%;
+  border-radius: 0 1rem 1rem 0;
+  padding: 2rem;
+}
+
+.main-curriculum hr {
+  height: 4px;
+  width: 10rem;
+  background-color: rgb(80, 89, 128);
+  border: 0px;
+  margin-bottom: 10px;
+}
+
+.sidebar-curriculum {
+  background: #d1e3ff;
+  width: 30%;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.sidebar-curriculum hr {
+  height: 4px;
+  background-color: #fff;
+  border: 0px;
+  margin-bottom: 10px;
+}
+.perfil__container {
+  margin: 2rem auto;
+  width: 50%;
+}
+.perfil-photo {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.title > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 38px;
+  margin-bottom: 2rem;
+}
+.title > h2 {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(131, 131, 249);
+}
+
+.aboutme,
+.social {
+  margin: 3rem 1.4rem;
+}
+
+.certificates,
+.idioms,
+.skills {
+  margin: 3rem 0;
+}
+
+.subtitle {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: rgb(131, 131, 249);
+}
+
+.contact-link {
+  margin-bottom: 7px;
+  border-radius: 1rem;
+  padding: 5px;
+  display: block;
+}
+.contact-link > i {
+  color: rgb(62, 51, 134);
+  width: 20px;
+}
+.contact-link:hover {
+  color: blue;
+  background-color: #fff;
+}
+
+.education__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.education__li {
+  display: flex;
+}
+
+.education__time {
+  padding-right: 1rem;
+  height: 150px;
+}
+
+.education__rounder {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-top: 0.25rem;
+  transform: translate(0, 5px);
+}
+
+.education__line {
+  display: block;
+  width: 2px;
+  height: 140px;
+  background-color: gray;
+  transform: translate(7px, 0);
+}
+
+.education__title {
+  font-size: 1.2rem;
+}
+
+.education__item {
+  font-size: 1rem;
+  color: gray;
+  display: block;
+  margin: 0.7rem;
+}
+
+.certificate__item {
+  margin-bottom: 1rem;
+}
+
+.certificate__title {
+  font-size: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+
+.idioms__data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1.2rem;
+}
+
+.idioms__item {
+  margin: 0 6rem 0 0;
+}
+
+.skills__data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.skills__item {
+  margin: 0 6rem 0 0;
+}
