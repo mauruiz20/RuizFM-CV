@@ -41,7 +41,6 @@ a:visited {
 
 .main-curriculum hr {
   height: 4px;
-  width: 10rem;
   background-color: rgb(80, 89, 128);
   border: 0px;
   margin-bottom: 10px;
@@ -51,6 +50,7 @@ a:visited {
   background: #d1e3ff;
   width: 30%;
   border-radius: 1rem 0 0 1rem;
+  padding: 0.5rem;
 }
 
 .sidebar-curriculum hr {
@@ -59,10 +59,12 @@ a:visited {
   border: 0px;
   margin-bottom: 10px;
 }
+
 .perfil__container {
-  margin: auto;
+  margin: 2rem auto;
   width: 50%;
 }
+
 .perfil-photo {
   width: 100%;
   border-radius: 50%;
@@ -82,7 +84,7 @@ a:visited {
 
 .aboutme,
 .social {
-  margin: 3rem 1.4rem;
+  margin: 3rem 0.7rem;
 }
 
 .certificates,
@@ -97,16 +99,26 @@ a:visited {
   color: rgb(131, 131, 249);
 }
 
+.main__subtitle {
+  width: fit-content;
+}
+
 .contact-link {
   margin-bottom: 7px;
   border-radius: 1rem;
   padding: 5px;
   display: block;
 }
+
+.contact-link span {
+  word-wrap: break-word;
+}
+
 .contact-link > i {
   color: rgb(62, 51, 134);
   width: 20px;
 }
+
 .contact-link:hover {
   color: blue;
   background-color: #fff;
@@ -123,7 +135,6 @@ a:visited {
 
 .education__time {
   padding-right: 1rem;
-  height: 150px;
 }
 
 .education__rounder {
@@ -140,7 +151,7 @@ a:visited {
 .education__line {
   display: block;
   width: 2px;
-  height: 140px;
+  height: 95%;
   background-color: gray;
   transform: translate(7px, 0);
 }
@@ -218,29 +229,32 @@ a:visited {
     padding: 0 1.5rem;
   }
 
+  .sidebar__subtitle {
+    width: fit-content;
+  }
+
   .main-curriculum hr,
   .sidebar-curriculum hr {
     height: 4px;
-    width: 10rem;
+    width: 100%;
     background-color: rgb(80, 89, 128);
     border: 0px;
     margin-bottom: 10px;
   }
 
-  .education__line {
-    height: 103%;
-  }
-
-  .skills__data,
-  .idioms__data {
+  .skills__data {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem;
   }
 
-  .skills__item,
-  .idioms__item {
-    width: 5rem;
+  .idioms__data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills__item {
+    width: 7rem;
   }
 
   .contact-link:hover {
@@ -250,10 +264,6 @@ a:visited {
 }
 
 @media (max-width: 500px) {
-  .education__line {
-    height: 110%;
-  }
-
   .skills__data,
   .idioms__data {
     display: flex;
@@ -262,8 +272,7 @@ a:visited {
     margin: 1rem;
   }
 
-  .skills__item,
   .idioms__item {
-    width: 1.8rem;
+    width: 10rem;
   }
 }
