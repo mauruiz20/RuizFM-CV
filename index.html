@@ -1,6 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
   <head>
+
     <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,22 +26,43 @@
       crossorigin="anonymous"
     ></script>
 
-    <title>Curriculum Vitae</title>
+    <title>Curriculum Vitae - Ruiz</title>
+
   </head>
+
   <body>
-    <div class="content-curriculum">
-      <div class="sidebar-curriculum">
-        <div class="perfil__container">
+
+    <div class="curriculum" id="area-cv">
+
+      <!-- Sidebar content -->
+      
+      <div class="curriculum__sidebar">
+
+        <button class="printpdf" id="print-pdf">
+          <i class="fa-solid fa-print"></i>
+        </button>
+
+        <a class="printpdf__movil" href="./assets/pdf/CV - Ruiz, Francisco Mauricio.pdf">
+          <i class="fa-solid fa-print"></i>
+        </a>
+
+        <div class="photo__container">          
+
           <img
-            class="perfil-photo"
+            class="photo__img"
             alt="foto"
             src="./assets/img/foto-carnet1.png"
           />
         </div>
-        <div class="title">
+
+        <div class="curriculum__name">
           <h1>Francisco Mauricio Ruiz</h1>
         </div>
+
+        <!-- About me -->
+
         <div class="aboutme">
+
           <div class="sidebar__subtitle">
             <h3 class="subtitle">Sobre mí</h3>
             <hr />
@@ -55,26 +79,30 @@
             nuevas tenologías, siempre dispuesto a aceptar el cambio.
           </p>
         </div>
-        <div class="social">
+
+        <!-- Contact -->
+
+        <div class="contact">
+
           <div class="sidebar__subtitle">
             <h3 class="subtitle">Contacto</h3>
             <hr />
           </div>
-          <div class="contact-link">
+          <div class="contact__link">
             <i class="fa-solid fa-location-dot"></i>
             <span>Tucumán - Argentina</span>
           </div>
-          <a href="mailto:ruizmauricio012@gmail.com" class="contact-link">
+          <a href="mailto:ruizmauricio012@gmail.com" class="contact__link">
             <i class="fa-solid fa-envelope"></i>
             <span>ruizmauricio012 @gmail.com</span>
           </a>
-          <div class="contact-link">
+          <div class="contact__link">
             <i class="fa-solid fa-phone"></i>
             <span>+54(3863)542848</span>
           </div>
           <a
             href="https://www.linkedin.com/in/ruiz-francisco-mauricio/"
-            class="contact-link"
+            class="contact__link"
             target="_blank"
           >
             <i class="fa-brands fa-linkedin"></i>
@@ -82,29 +110,40 @@
           </a>
           <a
             href="https://github.com/mauruiz20"
-            class="contact-link"
+            class="contact__link"
             target="_blank"
           >
             <i class="fa-brands fa-github"></i>
             <span>mauruiz20</span>
           </a>
         </div>
+
       </div>
-      <div class="main-curriculum">
+
+      <!-- Main content -->
+
+      <div class="curriculum__content">
+
+        <!-- Education -->
+
         <div class="education">
-          <div class="main__subtitle">
+
+          <div class="content__subtitle">
             <h3 class="subtitle">Educación</h3>
             <hr />
           </div>
+
           <div class="education__content">
+
             <div class="education__li">
+
               <div class="education__time">
                 <span class="education__rounder"></span>
                 <span class="education__line"></span>
               </div>
 
               <div class="education__data">
-                <h3 class="education__title">Ingeniero en Computación</h3>
+                <h4 class="education__title">Ingeniero en Computación</h4>
                 <span class="education__item"
                   >Universidad Nacional de Tucumán (UNT)</span
                 >
@@ -115,14 +154,16 @@
                 <span class="education__item">2019 - Now</span>
               </div>
             </div>
+
             <div class="education__li">
+
               <div class="education__time">
                 <span class="education__rounder"></span>
                 <span class="education__line"></span>
               </div>
 
               <div class="education__data">
-                <h3 class="education__title">Instructor de Inglés</h3>
+                <h4 class="education__title">Instructor de Inglés</h4>
                 <span class="education__item">Stratford I. C. L. I.</span>
                 <span class="education__item"
                   >Instituto cultural de lengua inglesa. Monteros -
@@ -131,15 +172,17 @@
                 <span class="education__item">2012 - 2018</span>
               </div>
             </div>
+
             <div class="education__li">
+
               <div class="education__time">
                 <span class="education__rounder"></span>
               </div>
 
               <div class="education__data">
-                <h3 class="education__title">
+                <h4 class="education__title">
                   Secundario con orientación a Ciencias Naturales
-                </h3>
+                </h4>
                 <span class="education__item">Colegío Santísimo Rosario</span>
                 <span class="education__item">Monteros - Tucumán</span>
                 <span class="education__item">2012 - 2018</span>
@@ -147,8 +190,12 @@
             </div>
           </div>
         </div>
+
+        <!-- Certificates -->
+
         <div class="certificates">
-          <div class="main__subtitle">
+
+          <div class="content__subtitle">
             <h3 class="subtitle">Certificados</h3>
             <hr />
           </div>
@@ -175,21 +222,32 @@
             </div>
           </div>
         </div>
+
+        <!-- Idioms -->
+
         <div class="idioms">
-          <div class="main__subtitle">
+          
+          <div class="content__subtitle">
             <h3 class="subtitle">Idiomas</h3>
             <hr />
           </div>
+
           <ul class="idioms__data">
             <li class="idioms__item">Español (Nativo)</li>
             <li class="idioms__item">Inglés (Intermedio)</li>
           </ul>
+
         </div>
+
+        <!-- Skills -->
+
         <div class="skills">
-          <div class="main__subtitle">
+
+          <div class="content__subtitle">
             <h3 class="subtitle">Habilidades</h3>
             <hr />
           </div>
+
           <ul class="skills__data">
             <li class="skills__item">HTML/CSS</li>
             <li class="skills__item">Javascript</li>
@@ -200,9 +258,23 @@
             <li class="skills__item">MySQL</li>
             <li class="skills__item">React</li>
             <li class="skills__item">Git/Github</li>
+            <li class="skills__item">Linux</li>
           </ul>
+
         </div>
       </div>
     </div>
+
+    <!-- html2pdf.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+      integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="./assets/js/html2pdf.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js"></script>
+
   </body>
+
 </html>
