@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="es">
-
   <head>
-
     <!-- Meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -27,27 +25,26 @@
     ></script>
 
     <title>Curriculum Vitae - Ruiz</title>
-
   </head>
 
   <body>
-
     <div class="curriculum" id="area-cv">
-
       <!-- Sidebar content -->
-      
-      <div class="curriculum__sidebar">
 
-        <button class="printpdf" id="print-pdf">
+      <div class="curriculum__sidebar">
+        <button class="print-pdf-btn">
           <i class="fa-solid fa-print"></i>
         </button>
+        <button class="scroll-top-btn hidden">&#11014;</button>
 
-        <a class="printpdf__movil" href="./assets/pdf/CV - Ruiz, Francisco Mauricio.pdf">
+        <a
+          class="print-pdf-btn__movil"
+          href="./assets/pdf/CV - Ruiz, Francisco Mauricio.pdf"
+        >
           <i class="fa-solid fa-print"></i>
         </a>
 
-        <div class="photo__container">          
-
+        <div class="photo__container">
           <img
             class="photo__img"
             alt="foto"
@@ -62,7 +59,6 @@
         <!-- About me -->
 
         <div class="aboutme">
-
           <div class="sidebar__subtitle">
             <h3 class="subtitle">Sobre mí</h3>
             <hr />
@@ -83,7 +79,6 @@
         <!-- Contact -->
 
         <div class="contact">
-
           <div class="sidebar__subtitle">
             <h3 class="subtitle">Contacto</h3>
             <hr />
@@ -117,26 +112,21 @@
             <span>mauruiz20</span>
           </a>
         </div>
-
       </div>
 
       <!-- Main content -->
 
       <div class="curriculum__content">
-
         <!-- Education -->
 
         <div class="education">
-
           <div class="content__subtitle">
             <h3 class="subtitle">Educación</h3>
             <hr />
           </div>
 
           <div class="education__content">
-
             <div class="education__li">
-
               <div class="education__time">
                 <span class="education__rounder"></span>
                 <span class="education__line"></span>
@@ -156,7 +146,6 @@
             </div>
 
             <div class="education__li">
-
               <div class="education__time">
                 <span class="education__rounder"></span>
                 <span class="education__line"></span>
@@ -174,7 +163,6 @@
             </div>
 
             <div class="education__li">
-
               <div class="education__time">
                 <span class="education__rounder"></span>
               </div>
@@ -194,7 +182,6 @@
         <!-- Certificates -->
 
         <div class="certificates">
-
           <div class="content__subtitle">
             <h3 class="subtitle">Certificados</h3>
             <hr />
@@ -226,7 +213,6 @@
         <!-- Idioms -->
 
         <div class="idioms">
-          
           <div class="content__subtitle">
             <h3 class="subtitle">Idiomas</h3>
             <hr />
@@ -236,13 +222,11 @@
             <li class="idioms__item">Español (Nativo)</li>
             <li class="idioms__item">Inglés (Intermedio)</li>
           </ul>
-
         </div>
 
         <!-- Skills -->
 
         <div class="skills">
-
           <div class="content__subtitle">
             <h3 class="subtitle">Habilidades</h3>
             <hr />
@@ -260,21 +244,21 @@
             <li class="skills__item">Git/Github</li>
             <li class="skills__item">Linux</li>
           </ul>
-
         </div>
       </div>
     </div>
 
     <!-- html2pdf.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
       integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <script src="./assets/js/html2pdf.bundle.min.js"></script>
-    
+
     <!-- Custom JS -->
     <script src="./assets/js/main.js"></script>
-
   </body>
-
 </html>

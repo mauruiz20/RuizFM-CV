@@ -1,6 +1,5 @@
 /* CSS variables */
 :root {
-
   /* Colors */
 
   --title-color: #6e67d6;
@@ -22,8 +21,8 @@
   --h3-font-size: 1.45rem;
   --h4-font-size: 1.2rem;
   --normal-font-size: 1rem;
-  --small-font-size: .875rem;
-  --smaller-font-size: .8rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.8rem;
   --rounder-size: 1rem;
   --line-translation: 7px;
 
@@ -34,7 +33,7 @@
 
   /* Margin */
 
-  --m-1: .5rem;
+  --m-1: 0.5rem;
   --m-2: 1rem;
   --m-3: 1.5rem;
   --m-4: 2rem;
@@ -44,18 +43,18 @@
 /* Scale CV */
 
 body.scale-cv {
-  --h1-font-size: .938rem;
-  --h2-font-size: .938rem;
-  --h3-font-size: .875rem;
-  --h4-font-size: .8rem;
-  --normal-font-size: .813rem;
-  --small-font-size: .75rem;
-  --small-font-size: .688rem;
-  --smaller-font-size: .688rem;
-  --rounder-size: .7rem;
-  --m-1: .25rem;
-  --m-2: .5rem;
-  --m-3: .75rem;
+  --h1-font-size: 0.938rem;
+  --h2-font-size: 0.938rem;
+  --h3-font-size: 0.875rem;
+  --h4-font-size: 0.8rem;
+  --normal-font-size: 0.813rem;
+  --small-font-size: 0.75rem;
+  --small-font-size: 0.688rem;
+  --smaller-font-size: 0.688rem;
+  --rounder-size: 0.7rem;
+  --m-1: 0.25rem;
+  --m-2: 0.5rem;
+  --m-3: 0.75rem;
   --m-4: 1rem;
   --m-5: 2rem;
   --line-translation: 5px;
@@ -74,8 +73,80 @@ body.scale-cv {
   width: 35%;
 }
 
-.scale-cv .printpdf {
+.scale-cv .print-pdf-btn {
   display: none;
+}
+
+/* Scroll Top Button */
+
+.scroll-top-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: calc(1vh + 3.5rem);
+  width: 3rem;
+  height: 3rem;
+  right: 1vw;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--sidebar-color);
+  color: var(--title-color);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.scroll-top-btn:hover {
+  background: var(--subtitle-color);
+  color: var(--white);
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Print PDF Button */
+
+.print-pdf-btn,
+.print-pdf-btn__movil {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  width: 3rem;
+  height: 3rem;
+  right: 1vw;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--sidebar-color);
+  color: var(--title-color);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.print-pdf-btn > i,
+.print-pdf-btn__movil > i {
+  color: inherit;
+  font-size: var(--h4-font-size);
+  pointer-events: none;
+}
+
+.print-pdf-btn:hover,
+.print-pdf-btn__movil:hover {
+  background: var(--subtitle-color);
+  color: var(--white);
+}
+
+.print-pdf-btn__movil {
+  display: none;
+  text-align: center;
+  line-height: 2.5rem;
 }
 
 /* General styles */
@@ -147,38 +218,6 @@ a:visited {
 
 /* Sidebar styles */
 
-.printpdf, .printpdf__movil {
-  position: absolute;  
-  width: 2.5rem;
-  height: 2.5rem;
-  border: 0px;
-  background: inherit;
-  border-radius: 7px;
-  color: var(--title-color);
-  cursor: pointer;
-  z-index: 100;
-  top: 5px;
-  left: 5px;
-}
-
-.printpdf:hover, .printpdf__movil:hover {
-  background: var(--subtitle-color);
-  color: var(--white);
-}
-
-.printpdf > i, .printpdf__movil > i {
-  color: inherit;
-  font-size: var(--h4-font-size);
-}
-
-.printpdf__movil {
-  display: none;
-  text-align: center;
-  line-height: 2.5rem;
-  top: 0px;
-  left: 15px;
-}
-
 .curriculum__content hr {
   height: 4px;
   background-color: rgb(80, 89, 128);
@@ -206,7 +245,7 @@ a:visited {
 .curriculum__name > h1 {
   text-align: center;
   text-transform: uppercase;
-  font-size: var(--h1-font-size);  
+  font-size: var(--h1-font-size);
   color: var(--title-color);
 }
 
@@ -330,7 +369,6 @@ a:visited {
 /* < 1000px */
 
 @media (max-width: 1000px) {
-
   .curriculum {
     max-width: 100%;
     margin: 0;
@@ -356,11 +394,11 @@ a:visited {
     padding: 1rem 0;
   }
 
-  .printpdf {
+  .print-pdf-btn {
     display: none;
   }
 
-  .printpdf__movil {
+  .print-pdf-btn__movil {
     display: block;
   }
 
