@@ -4,6 +4,7 @@ doc.addEventListener("DOMContentLoaded", (e) => {
   // Delegación de eventos
   scrollTopButton(".scroll-top-btn");
   printPDFButton(".print-pdf-btn");
+  darkThemeButton(".dark-theme-btn", ".dark-theme-i");
 });
 
 /* Scroll Top Button */
@@ -25,6 +26,27 @@ function scrollTopButton(btn) {
         behavior: "smooth",
         top: 0,
       });
+    }
+  });
+}
+
+/* Dark Theme Button */
+
+function darkThemeButton(btn, i) {
+  const $i = doc.querySelector(i),
+    $body = doc.querySelector("body");
+
+  doc.addEventListener("click", (e) => {
+    if (e.target.matches(btn)) {
+      if ($body.classList.value === "dark-theme") {
+        $i.classList.remove("fa-sun");
+        $i.classList.add("fa-moon");
+      } else {
+        $i.classList.remove("fa-moon");
+        $i.classList.add("fa-sun");
+      }
+
+      $body.classList.toggle("dark-theme");
     }
   });
 }

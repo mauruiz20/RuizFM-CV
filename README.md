@@ -2,4 +2,4 @@
 
 <p>Proyecto Curriculum Vitae Online en HTML, CSS y JavaScript</p>
 
-http://www.ruizmauricio.me/
+http://www.ruizmauricio.engineer/

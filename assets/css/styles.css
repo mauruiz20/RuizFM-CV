@@ -3,12 +3,16 @@
   /* Colors */
 
   --title-color: #6e67d6;
-  --subtitle-color: rgb(131, 131, 249);
+  --subtitle-color: #8383f9;
   --text-color: #5e5e5e;
   --text-color-light: #939393;
   --sidebar-color: #d1e3ff;
+  --sidebar-color-responsive: #fafafa;
   --content-color: #fafafa;
+  --body-color: #fafafa;
   --time-color: #888888;
+  --contact-link-color: #3e3386;
+  --contact-link-color-hover: #fafafa;
   --blue: #3385ff;
   --indigo: #6610f2;
   --white: #fff;
@@ -62,7 +66,7 @@ body.scale-cv {
 
 .scale-cv .curriculum {
   margin: 0 auto;
-  max-width: 97%;
+  max-width: 99%;
 }
 
 .scale-cv .curriculum__content {
@@ -82,7 +86,7 @@ body.scale-cv {
 .scroll-top-btn {
   position: fixed;
   z-index: 999;
-  bottom: calc(1vh + 3.5rem);
+  bottom: calc(1vh + 7rem);
   width: 3rem;
   height: 3rem;
   right: 1vw;
@@ -91,7 +95,7 @@ body.scale-cv {
   font-size: 1.5rem;
   font-weight: bold;
   background-color: var(--sidebar-color);
-  color: var(--title-color);
+  color: var(--subtitle-color);
   cursor: pointer;
   outline: 0;
   border: 0;
@@ -101,6 +105,12 @@ body.scale-cv {
 .scroll-top-btn:hover {
   background: var(--subtitle-color);
   color: var(--white);
+}
+
+.scroll-top-btn > i {
+  color: inherit;
+  font-size: var(--h4-font-size);
+  pointer-events: none;
 }
 
 .hidden {
@@ -123,7 +133,7 @@ body.scale-cv {
   font-size: 1.5rem;
   font-weight: bold;
   background-color: var(--sidebar-color);
-  color: var(--title-color);
+  color: var(--subtitle-color);
   cursor: pointer;
   outline: 0;
   border: 0;
@@ -149,6 +159,38 @@ body.scale-cv {
   line-height: 2.5rem;
 }
 
+/* Dark Theme Button */
+
+.dark-theme-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: calc(1vh + 3.5rem);
+  width: 3rem;
+  height: 3rem;
+  right: 1vw;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: var(--sidebar-color);
+  color: var(--subtitle-color);
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.dark-theme-btn:hover {
+  background: var(--subtitle-color);
+  color: var(--white);
+}
+
+.dark-theme-btn > i {
+  color: inherit;
+  font-size: var(--h4-font-size);
+  pointer-events: none;
+}
+
 /* General styles */
 
 *,
@@ -170,6 +212,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--text-color);
+  background: var(--body-color);
 }
 
 a {
@@ -259,20 +302,22 @@ a:visited {
   border-radius: 1rem;
   padding: 5px;
   display: block;
+  transition: all 0.2s ease-out;
 }
 
 .contact__link span {
   word-wrap: break-word;
+  font-size: var(--normal-font-size);
 }
 
 .contact__link > i {
-  color: rgb(62, 51, 134);
+  color: var(--contact-link-color);
   width: 20px;
 }
 
 .contact__link:hover {
-  color: var(--blue);
-  background-color: var(--white);
+  color: var(--subtitle-color);
+  background-color: var(--contact-link-color-hover);
 }
 
 /* Content styles */
@@ -356,6 +401,20 @@ a:visited {
   gap: var(--m-1);
 }
 
+/* Dark theme styles */
+
+body.dark-theme {
+  --title-color: #f2f2f2;
+  --text-color: #bfbfbf;
+  --body-color: #2b2b2b;
+  --content-color: #212121;
+  --sidebar-color: #181616;
+  --sidebar-color-responsive: #181616;
+  --time-color: #bfbfbf;
+  --contact-link-color: #fafafa;
+  --contact-link-color-hover: #2b2b2b;
+}
+
 /* Responsive styles */
 
 /* < 1300px */
@@ -391,7 +450,6 @@ a:visited {
   .curriculum {
     display: block;
     margin: 0;
-    padding: 1rem 0;
   }
 
   .print-pdf-btn {
@@ -404,12 +462,13 @@ a:visited {
 
   .curriculum__sidebar {
     width: 100%;
-    background: var(--white);
+    background: var(--sidebar-color-responsive);
+    border-radius: 0%;
   }
 
   .curriculum__content {
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .sidebar__subtitle {
